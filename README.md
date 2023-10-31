@@ -19,7 +19,7 @@ You can authenticate to the SurveyPlanet API by providing your API Client Key an
 
 ## Examples:
 
-### cUrl
+### cUrl (requires [jq](https://jqlang.github.io/jq/))
 
 ```sh
 ./surveyplanet-api-test.sh <API_KEY> <API_SECRET>
@@ -58,5 +58,5 @@ php ./test/surveyplanet-api-test.php <API_KEY> <API_SECRET>
 #### PHP with Docker:
 
 ```sh
-docker container run --rm -v $(pwd):/app/ php:cli php /app/surveyplanet-api-test.php <API_KEY> <API_SECRET>
+docker container run --rm -v ${PWD}:/app/ php:cli php /app/surveyplanet-api-test.php <API_KEY> <API_SECRET>
 ```
